@@ -23,8 +23,10 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: `new`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Carolyn Haines Design`,
+    description: `Carolyn Haines is a product designer based in Denver,Colorado.`,
+    image: `/profilepic.png`,
+    siteUrl: `https://www.carolynhaines.design`,
   },
   plugins: [
     {
@@ -32,6 +34,7 @@ module.exports = {
       options: contentfulConfig,
     },
     'gatsby-plugin-image',
+    'gatsby-plugin-gatsby-cloud',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
     {
